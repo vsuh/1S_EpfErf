@@ -1,5 +1,6 @@
 ﻿#use json
 #use cmdline
+#use v8runner
 Перем Настройки Экспорт;
 Перем Конфиг Экспорт;
 Перем Скрипт, ver;
@@ -16,6 +17,14 @@
 КонецПроцедуры
 
 Процедура help(rc)
+Сообщить("
+|   "+Скрипт.Имя+" -act export,unpack,change,import
+|	любое или комбинация действий
+|	необязательные параметры:
+|		-ibAddress IBNAME
+|		-clUser USER
+|		-clPasswd PASSWORD
+|");
 Exit(rc);
 КонецПроцедуры
 
@@ -28,5 +37,5 @@ Exit(rc);
 ver = "1.0.2 vscraft@2015";
 
 init();
-
+help(0);
 viewsettings();
