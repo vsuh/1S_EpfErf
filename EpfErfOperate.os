@@ -1,5 +1,5 @@
 ﻿#use json
-#use cmdline
+//#use cmdline не удалось обработать отсутствие необязательного аргумента комстроки
 #use v8runner
 Перем Настройки Экспорт;
 Перем Конфиг Экспорт;
@@ -18,7 +18,7 @@
 
 Процедура help(rc)
 Сообщить("
-|   "+Скрипт.Имя+" -act export,unpack,change,import
+|   "+Скрипт.Имя+" export,unpack,change,import
 |	любое или комбинация действий
 |	необязательные параметры:
 |		-ibAddress IBNAME
@@ -37,5 +37,5 @@ Exit(rc);
 ver = "1.0.2 vscraft@2015";
 
 init();
-help(0);
+
 viewsettings();
