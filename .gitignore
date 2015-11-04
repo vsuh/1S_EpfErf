@@ -1,6 +1,10 @@
 *.json
+*.cf
+*.log
+1Cv8.1CD
 .vscode/
 reps/
 in/
 out/
-
+old/
+epferfoperate.os
